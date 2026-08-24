@@ -1,0 +1,23 @@
+# Dépendances
+node_modules/
+
+# Variables d'environnement (Contient vos mots de passe et clés)
+.env
+.env.local
+.env.production
+
+# Logs et débogage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Fichiers système et IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Build / Transpilation (si vous utilisez TypeScript ou un bundler)
+dist/
+build/
