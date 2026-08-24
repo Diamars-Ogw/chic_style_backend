@@ -13,11 +13,11 @@ router.get('/', async (req, res) => {
 });
 
 router.put('/', requireAdmin, async (req, res) => {
-  const { shopName, whatsappNumber, instagram, tiktok, facebook, tagline, ownerName, ownerBio, ownerPhotoUrl } = req.body;
+  const { shopName, whatsappNumber, whatsappGroupLink, instagram, tiktok, facebook, tagline, ownerName, ownerBio, ownerPhotoUrl } = req.body;
   const settings = await prisma.settings.upsert({
     where: { id: 'main' },
-    update: { shopName, whatsappNumber, instagram, tiktok, facebook, tagline, ownerName, ownerBio, ownerPhotoUrl },
-    create: { id: 'main', shopName, whatsappNumber, instagram, tiktok, facebook, tagline, ownerName, ownerBio, ownerPhotoUrl },
+    update: { shopName, whatsappNumber, whatsappGroupLink, instagram, tiktok, facebook, tagline, ownerName, ownerBio, ownerPhotoUrl },
+    create: { id: 'main', shopName, whatsappNumber, whatsappGroupLink, instagram, tiktok, facebook, tagline, ownerName, ownerBio, ownerPhotoUrl },
   });
   res.json(settings);
 });

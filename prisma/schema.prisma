@@ -48,6 +48,7 @@ model Settings {
   id            String   @id @default("main")
   shopName      String   @default("Chic Style")
   whatsappNumber String  @default("")
+  whatsappGroupLink String?
   instagram     String?
   tiktok        String?
   facebook      String?
@@ -56,4 +57,13 @@ model Settings {
   ownerBio      String?
   ownerPhotoUrl String?
   updatedAt     DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  contact   String   // téléphone ou email laissé par la visiteuse
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
 }

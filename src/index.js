@@ -8,6 +8,7 @@ import productRoutes from './routes/products.js';
 import categoryRoutes from './routes/categories.js';
 import settingsRoutes from './routes/settings.js';
 import uploadRoutes from './routes/upload.js';
+import contactRoutes from './routes/contact.js';
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -32,6 +33,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/contact', contactRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err);

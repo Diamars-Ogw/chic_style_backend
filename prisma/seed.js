@@ -35,7 +35,8 @@ async function main() {
     create: {
       id: 'main',
       shopName: 'Chic Style',
-      whatsappNumber: process.env.WHATSAPP_NUMBER || '22900000000',
+      whatsappNumber: process.env.WHATSAPP_NUMBER || '22960194915',
+      whatsappGroupLink: process.env.WHATSAPP_GROUP_LINK || '',
       instagram: '',
       tiktok: '',
       facebook: '',
@@ -85,6 +86,25 @@ async function main() {
     { name: 'Sac bandoulière mini tendance', price: 11000, category: 'Accessoires', image: '/products/produit-22.jpeg' },
     { name: 'Ensemble deux pièces moderne', price: 16000, category: 'Vêtements', image: '/products/produit-11.jpeg' },
     { name: 'Bracelet chaîne fine layering', price: 4500, category: 'Accessoires', image: '/products/produit-27.jpeg' },
+
+    // Batch complémentaire — le reste des photos envoyées, pour ne rien laisser de côté
+    { name: 'Collier chaîne double pendentif barre', price: 6000, category: 'Accessoires', image: '/products/produit-02.jpeg' },
+    { name: 'Grillz dents dorées strass', price: 7000, category: 'Accessoires', image: '/products/produit-03.jpeg' },
+    { name: 'Ensemble jersey crop & short en jean', price: 14000, category: 'Vêtements', image: '/products/produit-04.jpeg' },
+    { name: 'Ensemble total look chic noir & blanc', price: 22000, category: 'Vêtements', image: '/products/produit-06.jpeg', badge: 'Look complet' },
+    { name: 'Jean large motifs étoiles', price: 17000, category: 'Vêtements', image: '/products/produit-08.jpeg' },
+    { name: 'Lot de chouchous satinés', price: 3000, category: 'Beauté & plus', image: '/products/produit-12.jpeg' },
+    { name: 'Lunettes tendance (lot de 3 montures)', price: 6000, category: 'Accessoires', image: '/products/produit-14.jpeg' },
+    { name: 'Set boucles d\u2019oreilles dorées', price: 5500, category: 'Accessoires', image: '/products/produit-16.jpeg' },
+    { name: 'Collier croix filigrane doré', price: 5000, category: 'Accessoires', image: '/products/produit-18.jpeg' },
+    { name: 'Set faux-ongles nail art rose', price: 4000, category: 'Beauté & plus', image: '/products/produit-19.jpeg' },
+    { name: 'Faux-cils volumineux (lot de 5 paires)', price: 3500, category: 'Beauté & plus', image: '/products/produit-21.jpeg' },
+    { name: 'Collier cœur cristal "Friendship"', price: 4500, category: 'Accessoires', image: '/products/produit-23.jpeg' },
+    { name: 'Collier pendentif papillon', price: 5500, category: 'Accessoires', image: '/products/produit-24.jpeg' },
+    { name: 'Parure tortue émeraude (collier + boucles)', price: 8000, category: 'Accessoires', image: '/products/produit-26.jpeg' },
+    { name: 'Set ear cuffs dorés', price: 5000, category: 'Accessoires', image: '/products/produit-28.jpeg' },
+    { name: 'Faux piercing nez étoile', price: 2500, category: 'Accessoires', image: '/products/produit-29.jpeg' },
+    { name: 'Faux piercing nez cœur doré', price: 2500, category: 'Accessoires', image: '/products/produit-31.jpeg' },
   ];
 
   for (const p of demoProducts) {
